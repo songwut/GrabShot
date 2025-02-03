@@ -23,7 +23,7 @@ class ScoreController: ObservableObject {
     private let caretaker: Caretaker
     
     static let alertTitle = NSLocalizedString("Congratulations!", comment: "Alert title")
-    static let donateMessage = NSLocalizedString("Would you like to donate to the developer for coffee ☕️ right now?", comment: "Alert title")
+    static let donateMessage = NSLocalizedString("Would you like to make a donation to the Russian Guild of Cinematographers right now?", comment: "Alert title")
     static let donateURL: URL = URL(string: "https://www.tinkoff.ru/cf/6XEnLJ43nOy")!
     static private let triggerSleepSeconds = DispatchTimeInterval.seconds(2)
     

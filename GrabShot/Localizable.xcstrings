@@ -789,12 +789,12 @@
         }
       }
     },
-    "Donate 🍪" : {
+    "Donate" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Подарить 🍪"
+            "value" : "Сделать взнос"
           }
         }
       }
@@ -2578,6 +2578,16 @@
         }
       }
     },
+    "The program was created with the support of the Russian Cinematographers Guild." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Программа создана при поддержке Гильдии Кинооператоров России."
+          }
+        }
+      }
+    },
     "The ratio ranges from 0 (lowest) to 100% (highest)" : {
       "localizations" : {
         "ru" : {
@@ -2739,6 +2749,7 @@
       }
     },
     "Top" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -3059,13 +3070,13 @@
     "Width border" : {
 
     },
-    "Would you like to donate to the developer for coffee ☕️ right now?" : {
+    "Would you like to make a donation to the Russian Guild of Cinematographers right now?" : {
       "comment" : "Alert title",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Хотите пожертвовать разработчику на кофе ☕️ прямо сейчас?"
+            "value" : "Хотите ли вы сделать взнос на развитие Гильдии Кинооператоров России прямо сейчас?"
           }
         }
       }

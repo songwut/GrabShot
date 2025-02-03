@@ -21,6 +21,7 @@ struct AboutView: View {
     let ffmpeg = "[FFmpeg](http://ffmpeg.org)"
     let lgpURL = "[LGPLv2.1](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)"
     let ffmpegKit = "[FFmpegKit](https://github.com/arthenica/ffmpeg-kit)"
+    let rgc = "[R.G.C.](https://kinoglaz.ru)"
     
     var body: some View {
         VStack(spacing: AppGrid.pt8) {
@@ -64,6 +65,14 @@ struct AboutView: View {
             .multilineTextAlignment(.center)
             
             VStack {
+                Text("The program was created with the support of the Russian Cinematographers Guild.")
+                
+                Text(.init(rgc))
+            }
+            .multilineTextAlignment(.center)
+            .padding()
+            
+            VStack {
                 if let copyright = copyright {
                     Text(copyright)
                         .multilineTextAlignment(.center)
@@ -78,7 +87,7 @@ struct AboutView: View {
             .font(.caption)
             .padding()
         }
-        .frame(minWidth: AppGrid.pt400, minHeight: AppGrid.pt400)
+        .frame(minWidth: AppGrid.pt400, minHeight: AppGrid.pt600)
         .analyticsScreen(name: "\(type(of: self))")
     }
 }

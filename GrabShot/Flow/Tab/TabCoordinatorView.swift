@@ -154,7 +154,7 @@ struct TabCoordinatorView: View {
             isPresented: $showAlertDonate,
             presenting: scoreController.grabCount
         ) { grabCounter in
-            Button("Donate 🍪") {
+            Button("Donate") {
                 openURL(ScoreController.donateURL)
                 scoreController.isEnable = false
             }

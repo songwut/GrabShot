@@ -2221,7 +2221,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 44;
+				CURRENT_PROJECT_VERSION = 45;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "GrabShot/Preview\\ Content";
@@ -2238,14 +2238,14 @@
 				INFOPLIST_FILE = GrabShot/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GrabShot;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Denis Dmitriev.\nExclude rights to FFmpeg.\nThis software uses libraries from the FFmpeg project under the LGPLv2.1, compiled with FFmpegKit wrapper.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Denis Dmitriev.\nExclude rights to FFmpeg.\nThis software uses libraries from the FFmpeg project under the LGPLv2.1, compiled with FFmpegKit wrapper.";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = DenisDmitriev.GrabShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2269,7 +2269,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 44;
+				CURRENT_PROJECT_VERSION = 45;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "GrabShot/Preview\\ Content";
 				DEVELOPMENT_TEAM = TNTX3799P3;
@@ -2285,14 +2285,14 @@
 				INFOPLIST_FILE = GrabShot/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GrabShot;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Denis Dmitriev.\nExclude rights to FFmpeg.\nThis software uses libraries from the FFmpeg project under the LGPLv2.1, compiled with FFmpegKit wrapper.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Denis Dmitriev.\nExclude rights to FFmpeg.\nThis software uses libraries from the FFmpeg project under the LGPLv2.1, compiled with FFmpegKit wrapper.";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = DenisDmitriev.GrabShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

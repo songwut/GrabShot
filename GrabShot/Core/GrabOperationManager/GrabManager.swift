@@ -170,6 +170,7 @@ class GrabManager {
             
             if self.isLastVideoFromSession(video: video) {
                 self.delegate?.completedAll(grab: grabCounter)
+                grabCounter = .zero
             } else {
                 guard let currentIndex = videos.firstIndex(of: video) else { return }
                 let nextIndex = videos.index(after: currentIndex)

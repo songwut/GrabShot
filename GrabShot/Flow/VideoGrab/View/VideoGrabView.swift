@@ -10,6 +10,7 @@ import SwiftUI
 
 struct VideoGrabView: View {
     @EnvironmentObject var coordinator: GrabCoordinator
+    @EnvironmentObject var scoreController: ScoreController
     @ObservedObject var video: Video
     @StateObject var viewModel: VideoGrabViewModel
     @Binding var isProgress: Bool
@@ -73,6 +74,14 @@ struct VideoGrabView: View {
         .onReceive(viewModel.$isProgress, perform: { isProgress in
             self.isProgress = isProgress
         })
+        .onReceive(viewModel.$grabState) { grabState in
+            switch grabState {
+            case .complete(let shotsCount):
+                scoreController.updateGrabScore(count: shotsCount)
+            default:
+                break
+            }
+        }
     }
 }
 
@@ -82,10 +91,12 @@ struct VideoGrabView: View {
     let score = ScoreController(caretaker: Caretaker())
     let viewModel: VideoGrabViewModel = .build(store: videoStore, score: score)
     let coordinator = GrabCoordinator(videoStore: videoStore, imageStore: imageStore, scoreController: score)
+    let scoreController = ScoreController(caretaker: Caretaker())
     
     return VideoGrabView(video: .placeholder, viewModel: .build(store: videoStore, score: score), isProgress: .constant(false))
         .environmentObject(viewModel)
         .environmentObject(coordinator)
+        .environmentObject(scoreController)
         .frame(width: 700, height: 500)
 }
 

@@ -21,7 +21,7 @@ class ScoreTrigger {
     @AppStorage(DefaultsKeys.openAppCount)
     private var openAppCount: Int = 0
     
-    static private let triggerDonateGrabStep: Int = 300
+    static private let triggerDonateGrabStep: Int = 100
     static private let triggerGrabReviewStep: Int = 100
     
     static private let triggerDonateColorExtractStep: Int = 30
