@@ -171,7 +171,8 @@ class PlaybackPlayerModel: ObservableObject {
                 case .success(let imageURL):
                     addImage(by: imageURL, to: video)
                 case .failure(let failureFFmpeg):
-                    presentErrors([failureAV, failureFFmpeg])
+                    print(failureAV, failureFFmpeg)
+                    // presentErrors([failureAV, failureFFmpeg]) MARK: Бывают ошибки слищком часть
                 }
             }
             progressMatchFrame(is: false)

@@ -112,9 +112,12 @@ class Grabber {
                         self.progress += 1
                         self.delegate?.didUpdate(video: video, progress: progress, timecode: timecode, imageURL: imageURL)
                     case .failure(let failure):
+                        print(failure)
+                        /* MARK: Слишком частые ошибки забивают алертами
                         if let error = failure as? LocalizedError {
                             self.delegate?.presentError(error)
                         }
+                         */
                     }
                 }
                 
