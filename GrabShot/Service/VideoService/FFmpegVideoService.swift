@@ -464,7 +464,7 @@ class FFmpegVideoService {
         FFmpegKitConfig.enableLogCallback { log in
             if let message = log?.getMessage() {
                 let error = VideoServiceError.error(errorDescription: message, failureReason: nil)
-                completion(.failure(error))
+                 completion(.failure(error))
             }
         }
         let session = FFmpegKit.execute(command)

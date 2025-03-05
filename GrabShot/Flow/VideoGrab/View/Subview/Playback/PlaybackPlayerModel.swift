@@ -212,7 +212,7 @@ class PlaybackPlayerModel: ObservableObject {
                     completion(success)
                 case .failure(let failure):
                     if let error = failure as? LocalizedError {
-                        self?.presentError(error)
+                        // self?.presentError(error) MARK: Не показываем пользователю ошибки
                         completion(nil)
                     }
                 }

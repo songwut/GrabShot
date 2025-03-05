@@ -57,13 +57,20 @@ struct ProgressColorView: View {
                 })
                 .animation(.smooth, value: colors)
                 .animation(.easeIn, value: progress)
-                .frame(width: min(geometry.size.width * (Double(progress) / Double(total)), geometry.size.width))
+                .frame(width: getWidth(geometry: geometry))
                 .clipShape(RoundedRectangle(cornerRadius: height / 2))
                 .animation(.easeInOut, value: progress)
             }
         }
         .frame(height: height)
         .clipShape(RoundedRectangle(cornerRadius: height / 2))
+    }
+    
+    private func getWidth(geometry: GeometryProxy) -> CGFloat {
+        guard total != 0 else {
+            return 0
+        }
+        return min(geometry.size.width * (Double(progress) / Double(total)), geometry.size.width)
     }
 }
 
