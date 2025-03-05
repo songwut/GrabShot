@@ -43,7 +43,6 @@ class VideoGrabSidebarModel: ObservableObject {
                     let error = failure as NSError
                     self?.error = GrabError.map(errorDescription: error.localizedDescription, failureReason: error.localizedFailureReason)
                     self?.hasError = true
-                    
                 }
             }
         }
