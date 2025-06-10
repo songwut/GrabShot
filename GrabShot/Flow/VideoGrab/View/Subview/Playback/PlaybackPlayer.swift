@@ -56,10 +56,10 @@ struct PlaybackPlayer: View {
                 // For debug
                 if isDebug {
                     VStack {
-                        Text("Playback Status: \(viewModel.playbackStatus.description)")
-                        Text("Status Video: \(viewModel.statusVideo.description)")
-                        Text("Status Player: \(viewModel.statusPlayer.description)")
-                        Text("Status Time Control: \(viewModel.statusTimeControl.description)")
+                        Text("Playback Status: \(viewModel.playbackStatus)")
+                        Text("Status Video: \(viewModel.statusVideo)")
+                        Text("Status Player: \(viewModel.statusPlayer)")
+                        Text("Status Time Control: \(viewModel.statusTimeControl)")
                     }
                     .padding()
                     .background(.ultraThinMaterial)
@@ -136,7 +136,15 @@ struct PlaybackPlayer: View {
             }
         }
         .onReceive(viewModel.$statusVideo, perform: { statusVideo in
-            viewModel.playbackStatus = .status(statusVideo.description)
+            print("statusVideo:\(statusVideo)")
+            switch statusVideo {
+            case .readyToPlay:
+                viewModel.updateStatusPlayback(status: .readyToPlay)
+            case .failed:
+                viewModel.updateStatusPlayback(status: .failed)
+            default:
+                viewModel.updateStatusPlayback(status: .unknown)
+            }
         })
     }
     

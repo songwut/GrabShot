@@ -193,7 +193,7 @@ class PlaybackPlayerModel: ObservableObject {
         }
     }
     
-    private func updateStatusPlayback(status: PlaybackStatus) {
+    func updateStatusPlayback(status: PlaybackStatus) {
         DispatchQueue.main.async {
             self.playbackStatus = status
         }
