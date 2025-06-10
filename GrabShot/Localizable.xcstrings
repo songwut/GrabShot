@@ -1928,6 +1928,7 @@
       }
     },
     "paused" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2001,6 +2002,7 @@
       }
     },
     "Playback Status: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2011,6 +2013,7 @@
       }
     },
     "playing" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2386,6 +2389,7 @@
       }
     },
     "Status Player: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2396,6 +2400,7 @@
       }
     },
     "Status Time Control: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2406,6 +2411,7 @@
       }
     },
     "Status Video: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -2739,6 +2745,7 @@
       }
     },
     "Top" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -3033,6 +3040,7 @@
       }
     },
     "waiting" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
